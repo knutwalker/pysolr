@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/knutwalker/pysolr.png?branch=master)](http://travis-ci.org/knutwalker/pysolr)
+[![Build Status](https://secure.travis-ci.org/knutwalker/pysolr.png?branch=testing)](http://travis-ci.org/knutwalker/pysolr)
 
 ======
 pysolr
