@@ -6,7 +6,7 @@ python:
   - 2.7
 
 install:
-    - pip install simplejson nose
+    - pip install requests simplejson nose
     - SOLR_VER="3.6.1"
     - wget -O- "ftp://ftp.fu-berlin.de/unix/www/apache/lucene/solr/${SOLR_VER}/apache-solr-${SOLR_VER}.tgz" | tar xzf -
     - SOLR_PATH=`pwd`/apache-solr-${SOLR_VER}/example
