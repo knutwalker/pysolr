@@ -312,6 +312,7 @@ class Solr(object):
 
             self.log.error(error_message)
             raise SolrError(error_message)
+        return response
 
     def _select(self, params, handler="select"):
         # specify json encoding of results
