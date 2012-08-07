@@ -526,10 +526,12 @@ class Solr(object):
 
     # API Methods ############################################################
 
-    def search(self, q, handler="select", **kwargs):
+    def search(self, q, handler="select", multicore=False, **kwargs):
         """Performs a search and returns the results."""
         params = {'q': q}
         params.update(kwargs)
+        if multicore:
+            handler = '%s/%s' % (multicore.rstrip('/'), handler.lstrip('/'))
         response = self._select(params, handler)
 
         # TODO: make result retrieval lazy and allow custom result objects
